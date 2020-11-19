@@ -9,6 +9,7 @@
     cache_valid_time: 86400
     state: present
     force: yes
+  notify: Reload mysql
   tags: [ mysql ]
 
 - name: Ensure pymysql is present using pip
